@@ -12,7 +12,7 @@ export default defineConfig({
   base: '/docs',
   integrations: [
     starlight({
-      title: 'AzuraCast Local Docs',
+      title: 'CloudmuCast Local Docs',
       logo: {
         src: './src/images/logo.svg'
       },
@@ -26,9 +26,9 @@ export default defineConfig({
       },
       sidebar: [
         { label: 'About These Docs', link: '/' },
-        { label: 'Live Documentation', link: 'https://www.azuracast.com/docs' },
+        { label: 'Live Documentation', link: 'https://www.cloudmucast.com/docs' },
         { label: 'API Documentation', link: '/api' },
-        { label: 'Update AzuraCast', link: '/getting-started/updates' },
+        { label: 'Update CloudmuCast', link: '/getting-started/updates' },
         {
           label: 'Help',
           autogenerate: { directory: 'help' },

@@ -1,6 +1,6 @@
 ## This Repo
 
-Fork from (https://github.com/AzuraCast/azuracast.com) and litle modified.
+Fork from [AzuraCast/azuracast.com](https://github.com/AzuraCast/azuracast.com) and litle modified.
 
 # [Start Bootstrap - Landing Page](https://startbootstrap.com/theme/landing-page/)
 

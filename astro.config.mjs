@@ -14,7 +14,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: 'AzuraCast',
+      title: 'CloudmuCast',
       logo: {
         src: './src/images/logo.svg'
       },
@@ -24,14 +24,14 @@ export default defineConfig({
       ],
       social: {
         discord: 'https://discord.gg/azuracast',
-        github: 'https://github.com/azuracast/azuracast',
+        github: 'https://github.com/pewe79/cloudmucast',
       },
       sidebar: [
         { label: 'Home', link: '/' },
-        { label: 'About AzuraCast', link: '/docs' },
+        { label: 'About CloudmuCast', link: '/docs' },
         { label: 'Live Demo', link: '/docs/live-demo'},
-        { label: 'Install AzuraCast', link: '/docs/getting-started/installation' },
-        { label: 'Update AzuraCast', link: '/docs/getting-started/updates' },
+        { label: 'Install CloudmuCast', link: '/docs/getting-started/installation' },
+        { label: 'Update CloudmuCast', link: '/docs/getting-started/updates' },
         {
           label: 'Help',
           autogenerate: { directory: 'docs/help' },

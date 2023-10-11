@@ -3,7 +3,7 @@ window.onload = function() {
 
   // the following lines will be replaced by docker/configurator, when it runs in a docker-container
   window.ui = SwaggerUIBundle({
-    url: "https://raw.githubusercontent.com/AzuraCast/AzuraCast/main/web/static/openapi.yml",
+    url: "https://raw.githubusercontent.com/PeWe79/CloudmuCast/main/web/static/openapi.yml",
     dom_id: '#swagger-ui',
     deepLinking: true,
     presets: [

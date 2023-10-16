@@ -27,6 +27,9 @@ export default defineConfig({
         discord: 'https://discord.gg/azuracast',
         github: 'https://github.com/pewe79/cloudmucast',
       },
+      editLink: {
+        baseUrl: 'https://github.com/azuracast/azuracast.com/tree/main/src/content/docs/docs',
+      },
       sidebar: [
         { label: 'Home', link: '/' },
         { label: 'About CloudmuCast', link: '/docs' },

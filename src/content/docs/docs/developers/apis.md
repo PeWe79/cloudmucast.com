@@ -11,7 +11,7 @@ sidebar:
   order: 1
 ---
 
-Once installed and running, AzuraCast exposes an API that allows you to monitor and interact with your stations. You can perform the following functions and more from the JSON REST API:
+Once installed and running, CloudmuCAst/AzuraCast exposes an API that allows you to monitor and interact with your stations. You can perform the following functions and more from the JSON REST API:
 
 - View now-playing data and recent song history for all stations
 - View general station information
@@ -20,7 +20,7 @@ Once installed and running, AzuraCast exposes an API that allows you to monitor 
 
 ## Per-Install API Documentation
 
-Each AzuraCast installation includes documentation for the API at the exact version it's currently using. In our public documentation, we include the API as of the latest Rolling Release version.
+Each CloudmuCAst/AzuraCast installation includes documentation for the API at the exact version it's currently using. In our public documentation, we include the API as of the latest Rolling Release version.
 
 - [/api](View API Documentation)
 
@@ -28,7 +28,7 @@ Each AzuraCast installation includes documentation for the API at the exact vers
 
 If you're accessing sensitive information or modifying the server, you will be required to authenticate your API requests with an authorization key.
 
-You can create an API key from the AzuraCast web interface, by clicking the user menu in the top right and clicking "My API Keys". Any API keys you create will share the same permissions that you have as a user.
+You can create an API key from the CloudmuCAst/AzuraCast web interface, by clicking the user menu in the top right and clicking "My API Keys". Any API keys you create will share the same permissions that you have as a user.
 
 The preferred method of authenticating is to send the following header along with your API request:
 
@@ -40,7 +40,7 @@ You can also include the API key in the `X-API-Key` header if desired.
 
 ## Now Playing Data APIs
 
-The most important and frequently accessed pieces of information that AzuraCast stores are all served as part of a single group of data, which we refer to as the "Now Playing" data.
+The most important and frequently accessed pieces of information that CloudmuCAst/AzuraCast stores are all served as part of a single group of data, which we refer to as the "Now Playing" data.
 
 Because of how valuable this information is, we serve it in a number of ways depending on whether performance or flexibility is your main concern.
 

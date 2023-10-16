@@ -11,30 +11,30 @@ sidebar:
   order: 0
 ---
 
-Development on the main AzuraCast application should always be applicable to a broad community of radio station operators and not specific features to one station or group of stations.
+Development on the main CloudmuCAst/AzuraCast application should always be applicable to a broad community of radio station operators and not specific features to one station or group of stations.
 
-If you would like to build a set of features specific to one station or group of stations, you should take advantage of AzuraCast's plugin architecture. The plugin system takes advantage of event listeners that are built into AzuraCast itself. Check out the [example plugin](https://github.com/AzuraCast/example-plugin) for more details on what is possible via plugins.
+If you would like to build a set of features specific to one station or group of stations, you should take advantage of CloudmuCAst/AzuraCast's plugin architecture. The plugin system takes advantage of event listeners that are built into CloudmuCAst/AzuraCast itself. Check out the [example plugin](https://github.com/AzuraCast/example-plugin) for more details on what is possible via plugins.
 
 ## Contributing Code Changes
 
-AzuraCast is open-source software, and as part of this dedication to openness and transparency, we fully support contributions from members of the community who are skilled in the languages that we use to build our applications.
+CloudmuCAst/AzuraCast is open-source software, and as part of this dedication to openness and transparency, we fully support contributions from members of the community who are skilled in the languages that we use to build our applications.
 
 A majority of our repositories come with an `.editorconfig` file in the root, which will set many standards for indentation, punctuation and other style items for you automatically. You may need to enable EditorConfig support in your IDE of choice.
 
 If your IDE does not support EditorConfig, the most important standard to remember that we follow is the PHP Framework Interoperability Group's [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/) standard.
 
-Accessibility, security, and modern best practices are very important in AzuraCast's development. Any newly contributed code can, and should, take advantage of the full suite of new features made available in PHP 8.0 and newer.
+Accessibility, security, and modern best practices are very important in CloudmuCAst/AzuraCast's development. Any newly contributed code can, and should, take advantage of the full suite of new features made available in PHP 8.0 and newer.
 
-Contributions are also welcome in the supporting technologies used to make AzuraCast possible, such as:
+Contributions are also welcome in the supporting technologies used to make CloudmuCAst/AzuraCast possible, such as:
 
 - Dockerfiles (see [our separate repositories](https://github.com/AzuraCast) for Docker containers)
 - [Ansible configuration](https://github.com/AzuraCast/AzuraCast/tree/master/util/ansible) for Ansible installs
 
 ## Setting Up a Local Environment
 
-Regardless of your host operating system, it's highly recommended to use **Docker** when developing locally, as it offers portability, convenience, and a very close approximation of how AzuraCast runs on production environments.
+Regardless of your host operating system, it's highly recommended to use **Docker** when developing locally, as it offers portability, convenience, and a very close approximation of how CloudmuCAst/AzuraCast runs on production environments.
 
-For the steps below, we're assuming you've created a folder where you will store all of your AzuraCast-related projects, like `/home/myuser/azuracast/`.
+For the steps below, we're assuming you've created a folder where you will store all of your CloudmuCAst/AzuraCast-related projects, like `/home/myuser/azuracast/`.
 
 You will need Git and Docker installed locally. If you're on Windows or Mac, the best way to use Docker is via the native [Docker Desktop](https://www.docker.com/products/docker-desktop) applications for those platforms.
 
@@ -42,9 +42,9 @@ For Windows, an installer tool like [Scoop](https://scoop.sh/) is highly recomme
 
 ### Clone the Core Repository
 
-Using Git, clone the AzuraCast core repository into a subfolder of your working directory.
+Using Git, clone the CloudmuCAst/AzuraCast core repository into a subfolder of your working directory.
 
-> **Note for Windows developers:** Before cloning the repositories, you should ensure your Git is locally configured to not automatically convert line endings from Linux style (LF) to Windows style (CRLF), which will break AzuraCast. You can set this globally by running:
+> **Note for Windows developers:** Before cloning the repositories, you should ensure your Git is locally configured to not automatically convert line endings from Linux style (LF) to Windows style (CRLF), which will break CloudmuCAst/AzuraCast. You can set this globally by running:
 > 
 > ```sh
 > git config --global core.autocrlf input
@@ -54,6 +54,9 @@ To do this, your initial command should look like:
 
 ```bash
 git clone https://github.com/AzuraCast/AzuraCast.git
+
+or
+git clone https://github.com/PeWe79/CloudmuCast.git 
 ```
 
 ### Setup via Docker Utility Script
@@ -118,7 +121,7 @@ make update
 
 ### Building Static Assets
 
-AzuraCast automatically builds static assets as they're changed in the dev environment. Modifications inside the `/frontend` folder are automatically watched and rebuilt when developing, then compiled down into static files as part of our Docker image build process.
+CloudmuCAst/AzuraCast automatically builds static assets as they're changed in the dev environment. Modifications inside the `/frontend` folder are automatically watched and rebuilt when developing, then compiled down into static files as part of our Docker image build process.
 
 ### Accessing `bash` Inside the Container
 
@@ -134,13 +137,13 @@ make bash
 
 ### Customize Local SSL
 
-Out of the box, AzuraCast comes with a self-signed SSL certificate that you can use for local development. Most browsers will complain about this, but you can add an exception to allow you to proceed anyway.
+Out of the box, CloudmuCAst/AzuraCast comes with a self-signed SSL certificate that you can use for local development. Most browsers will complain about this, but you can add an exception to allow you to proceed anyway.
 
 If you want to use a valid SSL certificate on your local installation, we highly recommend a tool called [mkcert](https://github.com/FiloSottile/mkcert).
 
 We commonly use this tool to register a local SSL-enabled domain at `azuracast.local`. You will need to edit your `/etc/hosts` file to point this domain to your own computer as a one-time change.
 
-The process for installing this certificate into the AzuraCast ecosystem looks like this command, run from the main repository's project root:
+The process for installing this certificate into the CloudmuCAst/AzuraCast ecosystem looks like this command, run from the main repository's project root:
 
 ```bash
 mkcert -cert-file util/local_ssl/azuracast.local.crt -key-file util/local_ssl/azuracast.local.key azuracast.local

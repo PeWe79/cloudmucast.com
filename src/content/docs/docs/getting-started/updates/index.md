@@ -1,5 +1,5 @@
 ---
-title: Update AzuraCast
+title: Update CloudmuCast/AzuraCast
 description: How to update your AzuraCast installation
 published: true
 date: 2022-04-05T03:51:15.752Z

@@ -1,5 +1,5 @@
 ---
-title: About CloudmuCast
+title: About CloudmuCast/AzuraCast
 description: Learn about CloudmuCast
 published: 1
 date: 2023-02-14T01:24:12.352Z

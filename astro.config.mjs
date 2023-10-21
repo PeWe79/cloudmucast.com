@@ -28,7 +28,7 @@ export default defineConfig({
         github: 'https://github.com/pewe79/cloudmucast',
       },
       editLink: {
-        baseUrl: 'https://github.com/azuracast/azuracast.com/tree/main',
+        baseUrl: 'https://github.com/pewe79/cloudmucast.com/tree/main',
       },
       sidebar: [
         { label: 'Home', link: '/' },

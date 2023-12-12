@@ -79,6 +79,5 @@ We would like to thank the following organizations for their support of AzuraCas
 - [CrowdIn](https://crowdin.com/) For giving us a simple and powerful tool to help translate our application for users around the world
 - [Netlify](https://www.netlify.com/) For supporting open-source software like ours and for serving as the host of our web site!
 - [BrowserStack](https://www.browserstack.com/) For providing us a tool that allows us to test across multiple browsers in one place
-- [Depot](https://depot.dev/?utm_source=AzuraCast) for powering our Docker image builds.
 
 ...and the creators and maintainers of the many free and open-source tools that AzuraCast/CloudmuCast is built on, who have done so much to help move FOSS forward!

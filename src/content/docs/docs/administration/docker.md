@@ -91,7 +91,7 @@ Extracts a .tar.gz file previously created by this same script's backup command,
 Restoring from a backup will remove any existing AzuraCast database or media that exists inside the Docker volumes.
 :::
 
-@# Customizing Docker Installations
+## Customizing Docker Installations
 
 For power users looking to customize or expand their Docker configuration, you should follow these best practices:
 
